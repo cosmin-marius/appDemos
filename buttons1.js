@@ -19,7 +19,7 @@ $(function() {
 	});
 	$('.nocontrast').on('click', function () {
 		$('body').css('background-blend-mode', 'normal');
-		$('body').css('background-image', 'url(img/bckgIri.jpg)');
+		$('body').css('background-image', 'url(bckgIri.jpg)');
 		$('#intro, #try').css('mix-blend-mode','normal');
 	});
 	var $cool=$('.cool'), $hot=$('.hot'); //unpicked and currently picked numbers
