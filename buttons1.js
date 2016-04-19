@@ -10,7 +10,7 @@ $(function() {
 	});
 	$('.contrast').on('click', function () {
 		$('body').css('background-blend-mode', 'normal');
-		$('body').css('background-image', 'url(img/nobckgP.jpg)');
+		$('body').css('background-image', 'url(nobckgP.jpg)');
 		$('#intro, #try').css('mix-blend-mode','difference');
 	});
 	$('.highcontrast').on('click', function () {
