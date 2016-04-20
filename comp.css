@@ -42,7 +42,7 @@
     	text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px darkblue;	  
   }
   #resetframe {
-  	color: #4285f4;
+  background-color: #4285f4;
   }
   .thumbnail {
       padding: 0 0 15px 0;
