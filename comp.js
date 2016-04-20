@@ -1,4 +1,9 @@
 $(document).ready(function(){
+  
+  $('#resetframe').on('click', function() {
+    $('iframe').attr('src', $('iframe').attr('src'));
+    });
+    
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
