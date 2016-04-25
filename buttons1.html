@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Six from forty nine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="buttons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div id="intro" class="jumbotron text-center collapse in">
+	<div class="btn-group btn-group-justified blocks">
+		<a class="btn btn-ghost btn-block contrast" type="button">
+		<span class="glyphicon glyphicon-adjust"></span></a>
+		<a class="btn btn-ghost btn-block highcontrast" type="button">
+		Hi <span class="glyphicon glyphicon-adjust"></span></a>
+		<a class="btn btn-ghost btn-block nocontrast" type="button">
+		No <span class="glyphicon glyphicon-adjust"></span></a>
+	</div>
+	<div class="btn-group btn-group-justified blocks">
+		<a href="index.html" class="btn btn-ghost"><span class="glyphicon glyphicon-off"></span>uit</a> 
+		<a id="play" class="btn btn-ghost btn-block" data-toggle="collapse" data-target="#intro, #buttons" type="button">
+		Play <span class="glyphicon glyphicon-play"></span></a>
+	</div>
+<p><noscript><em><strong>Important!</strong></p>
+
+<p>This application run<br>
+JavaScript code, please<br>
+enable JavaScript<br>
+in your web browser.</em></noscript></p>
+<p>Welcome to</p>
+<p>'Train your luck',<br>a game that tries<br>to establish whether<br>there is a pattern
+<br>for the occurrence<br>of random numbers.</p>
+<p>Now how to play?</p>
+<p>Pick 6 numbers from<br>1 to 49<br>in the table below,<br>then OK.</p>
+<p>If you want to change<br>some numbers, you can<br>tap or click once more<br>on any of them
+<br>and they'll become<br>available again.</p>
+
+<a id="giveitatry" class="btn btn-ghost btn-block" data-toggle="collapse" data-target="#intro, #buttons" type="button">
+Well, give it a try! <span class="glyphicon glyphicon-play"></span></a>
+	
+</div>
+<div id="try">
+<div id="buttons" class="collapse">
+	<div class="btn-group btn-group-justified blocks">
+		<a class="btn btn-ghost btn-block contrast" type="button">
+		<span class="glyphicon glyphicon-adjust"></span></a>
+		<a class="btn btn-ghost btn-block highcontrast" type="button">
+		Hi <span class="glyphicon glyphicon-adjust"></span></a>
+		<a class="btn btn-ghost btn-block nocontrast" type="button">
+		No <span class="glyphicon glyphicon-adjust"></span></a>
+	</div>
+<a href="index.html" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Home</a>
+
+<div id="result" class="jumbotron text-center">
+  		<p id="congrats"><span class="glyphicon glyphicon-arrow-down">
+  		</span> randoms <span class="glyphicon glyphicon-random"></span></p>
+	<div id="showmatch"><div id="randoms" class="btn-group btn-group-justified blocks">
+		<div class="btn-group"><button type="button" class="btn btn-primary randoms"></button></div>
+  		<div class="btn-group"><button type="button" class="btn btn-primary randoms"></button></div>
+  		<div class="btn-group"><button type="button" class="btn btn-primary randoms"></button></div>
+  		<div class="btn-group"><button type="button" class="btn btn-primary randoms"></button></div>
+  		<div class="btn-group"><button type="button" class="btn btn-primary randoms"></button></div>
+  		<div class="btn-group"><button type="button" class="btn btn-primary randoms"></button></div></div><br>
+<div class="btn-group btn-group-justified blocks">
+		<div class="btn-group"><button type="button" class="btn btn-danger choice"></button></div>
+  		<div class="btn-group"><button type="button" class="btn btn-danger choice"></button></div>
+  		<div class="btn-group"><button type="button" class="btn btn-danger choice"></button></div>
+  		<div class="btn-group"><button type="button" class="btn btn-danger choice"></button></div>
+  		<div class="btn-group"><button type="button" class="btn btn-danger choice"></button></div>
+  		<div class="btn-group"><button type="button" class="btn btn-danger choice"></button></div></div>
+	</div>
+</div><br>
+		<div id="undoK" class="btn-group btn-group-justified blocks">
+			<div class="btn-group"><button id="undo" class="btn btn-ghost" type="button">
+      		<span class="glyphicon glyphicon-off"></span>uit</button>
+      	</div>
+      	<div class="btn-group">
+      		<button id="oK" class="btn btn-ghost" type="button">Ok <span class="glyphicon glyphicon-ok">
+      		</span></button>
+      	</div>
+      </div>
+      <div id="quitAgain" class="btn-group btn-group-justified blocks">
+      	<a href="index.html" class="btn btn-ghost">
+      	<span class="glyphicon glyphicon-off"></span>uit</a>
+      	<div class="btn-group">
+      		<button id="reset" type="button" class="btn btn-ghost data-toggle="collapse" data-target="#buttons"">
+      		Play <span class="glyphicon glyphicon-play"></span></button>
+      	</div>
+      </div>
+		<!-- 49 buttons table -->
+		<div class="btn-group btn-group-justified blocks">
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+  			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+		</div>
+  		<div class="btn-group btn-group-justified blocks">
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+  			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+		</div>
+  		<div class="btn-group btn-group-justified blocks">
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+  			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+		</div>
+  		<div class="btn-group btn-group-justified blocks">
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+  			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+		</div>
+  		<div class="btn-group btn-group-justified blocks">
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+  			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+		</div>
+  		<div class="btn-group btn-group-justified blocks">
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+  			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+		</div>
+  		<div class="btn-group btn-group-justified blocks">
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+			<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+      	<div class="btn-group"><button type="button" class="cool btn"></button></div>
+  			<div class="btn-group"><button id="lastone" type="button" class="cool btn"></button></div>
+		</div><!-- End 49 buttons table -->
+</div>
+</div>
+<script>document.getElementsByTagName('noscript')[0].style.display = 'none';</script>
+<script type="text/javascript" src="buttons1.js"></script>
+</body>
+</html>
