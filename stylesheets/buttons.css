@@ -2,7 +2,7 @@
       font: 400 15px Montserrat, sans-serif;
       line-height: 1.8;
       color: #fff;
-      background-image: url(bckgIri.jpg);
+      background-image: url(../images/bckgIri.jpg);
       background-size: cover;
       background-repeat: no-repeat;
   }
@@ -15,7 +15,7 @@
 		border-style: solid;
   	 	border-width: 1px;
 		background-color: transparent;
-		border-radius: 0;	
+		border-radius: 0;
 	}
 	.blocks {border-spacing:1px;}
 	.btn-ghost {

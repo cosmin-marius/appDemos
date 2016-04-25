@@ -1,6 +1,6 @@
 $(function() {
-	"use strict";
-	
+	'use strict';
+
 	function main() {
 	var bodyHeight=$(window).height();
 	$('#showmatch').height(bodyHeight*0.14);
@@ -10,7 +10,7 @@ $(function() {
 	});
 	$('.contrast').on('click', function () {
 		$('body').css('background-blend-mode', 'normal');
-		$('body').css('background-image', 'url(nobckgP.jpg)');
+		$('body').css('background-image', 'url(images/nobckgP.jpg)');
 		$('#intro, #try').css('mix-blend-mode','difference');
 	});
 	$('.highcontrast').on('click', function () {
@@ -19,7 +19,7 @@ $(function() {
 	});
 	$('.nocontrast').on('click', function () {
 		$('body').css('background-blend-mode', 'normal');
-		$('body').css('background-image', 'url(bckgIri.jpg)');
+		$('body').css('background-image', 'url(images/bckgIri.jpg)');
 		$('#intro, #try').css('mix-blend-mode','normal');
 	});
 	var $cool=$('.cool'), $hot=$('.hot'); //unpicked and currently picked numbers
@@ -31,12 +31,12 @@ $(function() {
 	var $oK=$('#oK'), $undo=$('#undo');
 	$oK.prop('disabled', true); $undo.prop('disabled', true);
 	$oK.on('click', agree);
-	
-	var $results=$('#congrats'), $chosen=$('#chosen'); 
+
+	var $results=$('#congrats'), $chosen=$('#chosen');
 	var $reset=$('#reset');
 	$reset.prop('disabled', true);
 	$reset.on('click', playAgain);
-	
+
 	$cool.each(function(index) {
 		$(this).text(parseInt(index+1));
 	}).on('click', pick);
@@ -85,11 +85,11 @@ function agree() {
 function getRandom() {
 	var rIndex;
 	var rElem;
-	for (var i=0; i<6; i++) {   	
-   	rIndex=Math.floor(Math.random()*(allBalls.length));
-   	rElem=allBalls.splice(rIndex, 1);
-   	spins.push(rElem[0]);
-   	$randoms.eq(spins.length-1).text(spins[spins.length-1]);
+	for (var i=0; i<6; i++) {
+		  rIndex=Math.floor(Math.random()*(allBalls.length));
+		  rElem=allBalls.splice(rIndex, 1);
+		  spins.push(rElem[0]);
+		  $randoms.eq(spins.length-1).text(spins[spins.length-1]);
    }
 }
 
@@ -106,12 +106,12 @@ $.grep(arr1, function(el) {
 		else {
 			$results.text(matched.length + ' numbers matched!');
 		}
-		$chosen.text(matched.join(", "));
+		$chosen.text(matched.join(', '));
 		toGreen(matched, picks, $choice);
 		toGreen(matched, spins, $randoms);
 	}
 	else {
-		$results.text('no matches this time... try again!');		
+		$results.text('no matches this time... try again!');
 	}
 }
 
@@ -134,7 +134,7 @@ window.scrollTo(0, $(window).height());
 }
 
 }
-	
+
 $('#buttons').removeClass('collapse');
 var outerH=$('#try').html();
 $('#buttons').addClass('collapse');
