@@ -25,7 +25,7 @@ $(function() {
 	var $cool=$('.cool'), $hot=$('.hot'); //unpicked and currently picked numbers
 	var $choice=$('.choice'), $randoms=$('.randoms');
 	var picks=[null, null, null, null, null, null], spins=[], matched=[];
-	var allBalls=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49];
+	var allBalls = rangeArr(1, 49);
 	var $quitAgain=$('#quitAgain'); //var $undoK=$('#undoK'),
 	$quitAgain.hide();
 	var $oK=$('#oK'), $undo=$('#undo');
@@ -41,7 +41,13 @@ $(function() {
 		$(this).text(parseInt(index+1));
 	}).on('click', pick);
 
-	//$cool.on('click', pick);
+	function rangeArr(a, b) {
+	  var arr = [];
+	  for (var i = a; i <= b; i++) {
+	    arr.push(i);
+	  }
+	  return arr;
+	}
 
 function pick() {
 	//$undo.prop('disabled', false);
@@ -106,7 +112,6 @@ $.grep(arr1, function(el) {
 		else {
 			$results.text(matched.length + ' numbers matched!');
 		}
-		$chosen.text(matched.join(', '));
 		toGreen(matched, picks, $choice);
 		toGreen(matched, spins, $randoms);
 	}

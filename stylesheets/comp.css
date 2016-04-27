@@ -140,12 +140,6 @@
       margin-bottom: 20px;
       color: #79C753;
   }
-  footer p {
-    float: left;
-  }
-  footer p + p {
-    float: right;
-  }
   .slideanim {visibility:hidden;}
   .slide {
       animation-name: slide;
@@ -191,12 +185,5 @@
   @media screen and (max-width: 480px) {
     .logo {
         font-size: 150px;
-    }
-    footer p {
-      float: none;
-      margin: 0;
-    }
-    footer p + p {
-      float: none;
     }
   }
