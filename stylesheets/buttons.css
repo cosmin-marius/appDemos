@@ -1,27 +1,29 @@
 	body {
-      font: 400 15px Montserrat, sans-serif;
-      line-height: 1.8;
-      color: #fff;
-      background-image: url(../images/bckgIri.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
+		font: 400 15px Montserrat, sans-serif;
+		line-height: 1.8;
+		color: #fff;
+		background-image: url(../images/bckgIri.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
   }
 	.jumbotron, .container-fluid {
-      background-color: transparent;
-      padding: 5px;
+		background-color: transparent;
+		padding: 5px;
   }
 	.btn, .btn:hover{
 		color: #fff;
 		border-style: solid;
-  	 	border-width: 1px;
+		border-width: 1px;
 		background-color: transparent;
 		border-radius: 0;
 	}
-	.blocks {border-spacing:1px;}
+	.blocks {
+		border-spacing:1px;
+	}
 	.btn-ghost {
-    	border-color: #fff;
-    	font-weight: bold;
-   	font-size: 150%;
+		border-color: #fff;
+		font-weight: bold;
+		font-size: 150%;
 	}
 	.cool {
 		font-size: 110%;
