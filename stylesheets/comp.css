@@ -1,7 +1,6 @@
   body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
-      color: #818181;
   }
   h2 {
       font-size: 24px;
@@ -147,9 +146,6 @@
       animation-duration: 1s;
       -webkit-animation-duration: 1s;
       visibility: visible;
-  }
-  #contact {
-    margin: auto;
   }
 
   @keyframes slide {
