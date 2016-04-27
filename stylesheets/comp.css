@@ -154,104 +154,8 @@
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
-  #heady {
-    -webkit-border-radius: 8px 8px 0 0;
-    -moz-border-radius: 8px 8px 0 0;
-    -ms-border-radius: 8px 8px 0 0;
-    -o-border-radius: 8px 8px 0 0;
-    border-radius: 8px 8px 0 0;
-    background: #79C753;
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ddfbfc), color-stop(100%, #79c753));
-    background: -webkit-linear-gradient(#ddfbfc, #79c753);
-    background: -moz-linear-gradient(#ddfbfc, #79c753);
-    background: -o-linear-gradient(#ddfbfc, #79c753);
-    background: -ms-linear-gradient(#ddfbfc, #79c753);
-    background: linear-gradient(#ddfbfc, #79c753);
-    position: relative;
-    padding: 15px 20px;
-    border-bottom: 1px solid #B2D2E1;
-  }
-  header p.view a, #heady a {
-    color: #06c;
-    text-decoration: none;
-  }
-  #heady ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    z-index: 1;
-    right: 20px;
-    top: 20px;
-    height: 38px;
-    padding: 1px 0;
-    background: #5198DF;
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #77b9fb), color-stop(100%, #3782cd));
-    background: -webkit-linear-gradient(#77b9fb, #3782cd);
-    background: -moz-linear-gradient(#77b9fb, #3782cd);
-    background: -o-linear-gradient(#77b9fb, #3782cd);
-    background: -ms-linear-gradient(#77b9fb, #3782cd);
-    background: linear-gradient(#77b9fb, #3782cd);
-    border-radius: 5px;
-    -webkit-box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
-    -moz-box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
-    box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
-    width: auto;
-  }
-  #heady ul:before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    left: -5px;
-    top: -4px;
-    right: -5px;
-    bottom: -6px;
-    background: rgba(0, 0, 0, 0.1);
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border-radius: 8px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
-    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
-  }
-  header ul li, #heady ul li {
-    width: 79px;
-    float: left;
-    border-right: 1px solid #3A7CBE;
-    height: 38px;
-  }
-  #heady ul li.single {
-    border: none;
-  }
-  #heady ul li + li {
-    width: 78px;
-    border-left: 1px solid #8BBEF3;
-  }
-  #heady ul li +li +li {
-    border-right: none;
-    width: 79px;
-  }
-  #heady ul a {
-    line-height: 1;
-    font-size: 11px;
-    color: #fff;
-    color: rgba(255, 255, 255, 0.8);
-    display: block;
-    text-align: center;
-    font-weight: 400;
-    padding-top: 6px;
-    height: 40px;
-    text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
-    text-decoration: none;
-  }
-  #heady ul a strong {
-    font-size: 14px;
-    display: block;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    text-decoration: none;
+  #contact {
+    margin: auto;
   }
 
   @keyframes slide {
@@ -288,15 +192,11 @@
     .logo {
         font-size: 150px;
     }
-  }
-  @media screen and (max-width:580px) {
-    #heady ul {
-      display: none;
+    footer p {
+      float: none;
+      margin: 0;
     }
-  footer p {
-    float: none;
-    margin: 0;
-  }
-  footer p + p {
-    float: none;
+    footer p + p {
+      float: none;
+    }
   }
