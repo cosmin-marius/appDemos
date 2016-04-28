@@ -26,7 +26,8 @@ $(function() {
 	var $choice=$('.choice'), $randoms=$('.randoms');
 	var picks=[null, null, null, null, null, null], spins=[], matched=[];
 	var allBalls = rangeArr(1, 49);
-	var $quitAgain=$('#quitAgain'); //var $undoK=$('#undoK'),
+	console.log(allBalls);
+	var $quitAgain=$('#quitAgain');
 	$quitAgain.hide();
 	var $oK=$('#oK'), $undo=$('#undo');
 	$oK.prop('disabled', true); $undo.prop('disabled', true);
@@ -50,7 +51,6 @@ $(function() {
 	}
 
 function pick() {
-	//$undo.prop('disabled', false);
 	$(this).addClass('hot').removeClass('cool').off().on('click', unpick);
 	var picked=parseInt($(this).text());
 	picks[$.inArray(null, picks)]=picked;
@@ -132,10 +132,10 @@ $.grep(arr1, function(el) {
 }
 
 function playAgain() {
-$('#buttons').remove();
-$('#try').append(outerH);
-main();
-window.scrollTo(0, $(window).height());
+	$('#buttons').remove();
+	$('#try').append(outerH);
+	main();
+	window.scrollTo(0, $(window).height());
 }
 
 }
